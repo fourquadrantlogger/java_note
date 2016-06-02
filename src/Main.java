@@ -1,7 +1,9 @@
 public class Main {
 
     public static void main(String[] args)  throws MathExpr.ExprException{
-        MathExprTest();
+//        MathExprTest();
+//        GeneralizedTable();
+        BTree();
     }
 
     public static void MathExprTest()  throws MathExpr.ExprException {
@@ -26,6 +28,69 @@ public class Main {
             }
         });
         echo(expr3.getExprStr() + "=" + expr3.compute());
+    }
+    public static void GeneralizedTable() {
+
+        String p = "((),a,b,(a,b,c),(a,(a,b),c))";
+        String p2 = "((()),2)";
+
+        String big = "{{a,b},{{a,g},{h},{a,n,f,{a,b,c}}},c}";
+        String middle = "[[p],[[d,f,[g]]],[h],[2]]";
+        GeneralizedTable gTab = new GeneralizedTable(middle);
+
+        System.out.println("length: " + gTab.length());
+        System.out.println("depth: " + gTab.depth());
+    }
+
+
+    public static void BTree(){
+        /**
+         * @param args
+         */
+        Node a = new Node('A');
+        Node b = new Node('B', null, a);
+        Node c = new Node('C');
+        Node d = new Node('D', b, c);
+        Node e = new Node('E');
+        Node f = new Node('F', e, null);
+        Node g = new Node('G', null, f);
+        Node h = new Node('H', d, g);
+
+            BinaryTree tree = new BinaryTree(h);
+            System.out.print(" Pre-Order:");
+            BinaryTree.preorder(tree.getRoot());
+            System.out.println();
+            System.out.print(" In-Order:");
+        BinaryTree.inorder(tree.getRoot());
+            System.out.println();
+            System.out.print("Post-Order:");
+        BinaryTree.postorder(tree.getRoot());
+            System.out.println();
+            System.out.print(" 非递归实现前序遍历-Order:");
+        BinaryTree.iterativePreorder(tree.getRoot());
+            System.out.println();
+            System.out.print("非递归实现前序遍历-Order2:");
+        BinaryTree.iterativePreorder2(tree.getRoot());
+            System.out.println();
+            System.out.print(" In-Order:");
+        BinaryTree.iterativeInorder(tree.getRoot());
+            System.out.println();
+            System.out.print(" In-Order2:");
+        BinaryTree.iterativeInorder2(tree.getRoot());
+            System.out.println();
+            System.out.print(" Post-Order:");
+        BinaryTree.iterativePostorder(tree.getRoot());
+            System.out.println();
+            System.out.print("Post-Order2:");
+        BinaryTree.iterativePostorder2(tree.getRoot());
+            System.out.println();
+            System.out.print("Post-Order3:");
+        BinaryTree.iterativePostorder3(tree.getRoot());
+            System.out.println();
+            System.out.print("Post-Order4:");
+        BinaryTree.iterativePostorder4(tree.getRoot());
+            System.out.println();
+
     }
     public static String echo(String str) {
         System.out.println(str);
