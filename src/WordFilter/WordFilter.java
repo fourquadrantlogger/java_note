@@ -15,14 +15,14 @@ public class WordFilter {
     Node[] nodes=new Node[256];
     public void addFilter(String filter){
         byte[] midbytes=filter.getBytes();
-        int index=midbytes[0];
-        if(index<0)index+=256;
-        nodes[index]=new Node(true);
+        int node=midbytes[0];
+        if(node<0)node+=256;
+        nodes[node]=new Node(false);
 
         if(midbytes.length>1) {
             byte[] newbs = new byte[midbytes.length - 1];
             System.arraycopy(midbytes, 1, newbs, 0, midbytes.length - 1);
-            nodes[index].AddNode(newbs);
+            nodes[node].AddNode(newbs);
         }
     }
     public boolean ExistString(String str){
@@ -38,7 +38,7 @@ public class WordFilter {
             System.arraycopy(midbytes, 1, newbs, 0, midbytes.length - 1);
             return nodes[index].ExistNode(newbs);
         }else {
-            return true;
+            return nodes[index].word;
         }
     }
 }
