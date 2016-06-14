@@ -10,7 +10,10 @@ public class WordFilter {
         addFilter("1234");
         addFilter("234123");
 
-        System.out.print("ExistString(\"1234\")"+ExistString("1234"));
+        System.out.println("ExistString(\"1234\")"+ExistString("1234"));
+        System.out.println("ExistString(\"12\")"+ExistString("12"));
+        System.out.println("ExistString(\"呜呜\")"+ExistString("呜呜"));
+        System.out.println("ExistString(\"234123\")"+ExistString("234123"));
     }
     Node[] nodes=new Node[256];
     public void addFilter(String filter){
