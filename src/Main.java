@@ -1,9 +1,13 @@
+import WordFilter.WordFilter;
+
 public class Main {
 
     public static void main(String[] args)  throws MathExpr.ExprException{
 //        MathExprTest();
 //        GeneralizedTable();
-        BTree();
+//        BTree();
+        WordFilter wordFilter=new WordFilter();
+        wordFilter.Tester();
     }
 
     public static void MathExprTest()  throws MathExpr.ExprException {
