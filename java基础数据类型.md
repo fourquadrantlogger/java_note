@@ -1,10 +1,3 @@
-## map
-java中的map其实就是以键值对形式的存放数据的容器，其常用的实现类主要是哈希map
-例如：
-Map map = new HashMap();
-插入元素：map.put("key", obj); 
-移除元素: map.remove("key");
-清空: map.clear();
 
 ## Intager 与int
 Integer i=0; 
@@ -35,11 +28,7 @@ list.toArray(strings);
 
 String[] s = {"a","b","c"};
 List list = java.util.Arrays.asList(s);
-## java list copy方法
-```
- List<Xunzhang> list_data = new ArrayList<>(Arrays.asList(new Xunzhang[list_localall.size()]));
- Collections.copy(list_data,list_localall);
-```
+
 
 ## java 中的instanceof
 java 中的instanceof 运算符是用来在运行时指出对象是否是特定类的一个实例
