@@ -13,3 +13,8 @@ String也是final类型
 ## String 与StringBuffer
 
 StringBuffer类提供的字符串进行修改
+```
+String s = new String("xyz");
+```
+创建了几个String Object? 
+两个
