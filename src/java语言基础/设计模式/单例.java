@@ -17,9 +17,9 @@ public class 单例 {
     }
 
     public static void main(String[] args){
-        单例 d1= getInstance();
+        单例 d1= 单例.getInstance();
         d1.values.add(1);
-        单例 d2= getInstance();
+        单例 d2= 单例.getInstance();
         d2.values.add(2);
 
         if(d1==d2){
