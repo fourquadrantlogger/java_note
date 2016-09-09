@@ -9,8 +9,10 @@ import java.util.Map;
 public class Test {
     private static Map<String, Class<? extends MClass>> map = new HashMap<>();
 
-    public static void main(String[] args) {
-        NClass n = new NClass();
-        map.put("1", (Class<? extends MClass>) n);
+    public static void main(String[] args) throws Exception {
+        Class<?> unknownClass = Class.forName("java语言基础.范型." + "NClass");
+        if (NClass.class.isAssignableFrom(unknownClass)) {
+            map.put("1", (Class<? extends MClass>) unknownClass);
+        }
     }
 }
