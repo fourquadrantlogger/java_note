@@ -6,6 +6,10 @@
     <modelVersion>4.0.0</modelVersion>
     <dependencies>
     </dependencies>
+    <properties>
+        <java-version>1.8</java-version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <build>
         <plugins>
         </plugins>
