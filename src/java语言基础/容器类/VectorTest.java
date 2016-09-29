@@ -9,12 +9,9 @@ public class VectorTest {
     public static void main(String[] args){
         Vector<Integer> integers=new Vector<Integer>();
         integers.add(0);
-
         Vector<Integer> integers2=integers;
         integers2.add(1);
 
-
         System.out.println();
-
     }
 }
