@@ -1,4 +1,4 @@
-package java语言基础.容器类;
+package jdk源码分析.容器类;
 
 import java.util.Vector;
 

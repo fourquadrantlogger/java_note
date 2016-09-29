@@ -2,7 +2,7 @@
 // 不能，一个对象的一个synchronized方法只能由一个线程访问
 
 
-package  java语言基础.线程安全;
+package  jdk源码分析.线程安全;
 
 public class synchronized_Test{
     private int j;

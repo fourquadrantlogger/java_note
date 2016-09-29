@@ -1,4 +1,4 @@
-package java语言基础.面向对象的特性;
+package jdk源码分析.面向对象的特性;
 
 /**
  * Created by timeloveboy on 16-9-22.
