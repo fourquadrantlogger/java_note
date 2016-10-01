@@ -1,4 +1,4 @@
-package jdk源码分析.设计模式;
+package jdk源码分析.设计模式.创建模式;
 
 import java.util.LinkedList;
 import java.util.List;
