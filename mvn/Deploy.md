@@ -1,20 +1,27 @@
 ## 一 配置settings.xml
- 
-因为nexus是需要登陆操作，当然可以通过配置免登陆，这是后话。
-在settings.xml的<servers></servers>
-<server>   
-<id>thirdparty</id>   
-<username>admin</username>
-<password>admin123</password>   
-</server>
- 
-当然如果你要上传包去其他仓库，可依照此例，如
- 
-<server>   
-<id>central</id>   
-<username>admin</username>   
-<password>admin123</password>   
-</server>
+```
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+https://maven.apache.org/xsd/settings-1.0.0.xsd"> 
+<localRepository/>
+<interactiveMode/>
+<usePluginRegistry/>
+<offline/>
+<pluginGroups/>
+<servers>
+    <server>
+        <id>ossrh</id>
+        <username>timeloveboy</username>
+        <password>***</password>
+    </server>
+</servers>
+<mirrors/>
+<proxies/>
+<profiles/>
+<activeProfiles/>
+</settings>
+```
  
 如果进行deploy时返回Return code is: 401错误，则需要进行用户验证或者你已经验证的信息有误。
 
@@ -24,5 +31,5 @@
 sudo apt install maven
 mvn clean deploy -P release
 
-## 官方文档
+## 附：官方文档
 http://central.sonatype.org/pages/ossrh-guide.html
