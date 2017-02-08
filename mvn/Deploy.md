@@ -18,8 +18,11 @@
  
 如果进行deploy时返回Return code is: 401错误，则需要进行用户验证或者你已经验证的信息有误。
 
-## gpg 钥匙
+## 二.gpg 钥匙
 
-## deploy
+## 三.deploy
 sudo apt install maven
 mvn clean deploy -P release
+
+## 官方文档
+http://central.sonatype.org/pages/ossrh-guide.html
