@@ -1,0 +1,3 @@
+#jstat
+
+jstat -gc (pid)
