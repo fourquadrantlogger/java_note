@@ -21,6 +21,8 @@ http://spring.io/projects
 
 2. spring aop功能
 
-spring代替了servlet、server、dao功能，程序员只需要实现jsp模块
+spring代替了servlet、server、dao功能，实现了组件解偶，程序员只需要实现jsp模块
 
 管理组件对象，维护对象关系。
+
+3.spring web mvc处理流程
