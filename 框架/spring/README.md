@@ -14,3 +14,13 @@
 http://spring.io/projects
 
 ![spring framework](/img/spring.jpg)
+
+## spring核心作用
+
+1. spring core ioc功能
+
+2. spring aop功能
+
+spring代替了servlet、server、dao功能，程序员只需要实现jsp模块
+
+管理组件对象，维护对象关系。
