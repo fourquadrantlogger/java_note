@@ -1,0 +1,14 @@
+<settings>
+	<servers>
+		<server>
+		    <id>oss</id>
+		    <username>timeloveboy</username>
+		    <password>abc014916</password>
+		</server>
+		<server>
+		    <id>ossrh</id>
+		    <username>timeloveboy</username>
+		    <password>abc014916</password>
+		</server>
+	</servers>
+</settings>
