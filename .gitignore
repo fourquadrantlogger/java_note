@@ -1,4 +1,4 @@
 /.idea
 /out
 /target
-java_note.iml
+*.iml
