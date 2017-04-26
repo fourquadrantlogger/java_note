@@ -1,3 +1,8 @@
+# 字节码
+
+异常，采用异常表来完成
+
+## 类初始化
 
 http://www.ibm.com/developerworks/cn/java/j-lo-clobj-init/index.html
 

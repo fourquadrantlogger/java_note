@@ -8,6 +8,7 @@ public class Main {
 //        BTree();
         WordFilter wordFilter=new WordFilter();
         wordFilter.Tester();
+        jps
     }
 
     public static void MathExprTest()  throws MathExpr.ExprException {
