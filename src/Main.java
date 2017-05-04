@@ -1,5 +1,7 @@
 import WordFilter.WordFilter;
 
+import java.security.MessageDigest;
+
 public class Main {
 
     public static void main(String[] args)  throws MathExpr.ExprException{
@@ -8,7 +10,7 @@ public class Main {
 //        BTree();
         WordFilter wordFilter=new WordFilter();
         wordFilter.Tester();
-        jps
+        MessageDigest
     }
 
     public static void MathExprTest()  throws MathExpr.ExprException {
