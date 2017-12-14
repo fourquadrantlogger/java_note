@@ -20,6 +20,15 @@ public class User {
 
         System.out.println(userMap.get("1").name);
         System.out.println(userMap.get("2").name);
+        System.out.println(userMap.get("2").equals(userMap.get("1")));
+
+
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+//        return this.name.equals(((User)obj).name);
+        return true;
     }
 
     @Override
