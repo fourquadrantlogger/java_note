@@ -1,4 +1,4 @@
-package jdk源码分析.设计模式.结构模式;
+package jdk源码分析.设计模式.结构模式.享元模式;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,9 +9,9 @@ import java.util.Vector;
  * Created by timeloveboy on 16/9/30.
  * 享元模式
  */
-public class Flyweight {
+public class ConnectionPool {
 
-    private static Flyweight instance = null;
+    private static ConnectionPool instance = null;
     //    公有属性
     Connection conn = null;
     private Vector<Connection> pool;
@@ -22,7 +22,7 @@ public class Flyweight {
     private int poolSize = 100;
 
     //   构造方法，做一些初始化工作
-    private Flyweight() {
+    private ConnectionPool() {
         pool = new Vector(poolSize);
         for (int i = 0; i < poolSize; i++) {
             try {

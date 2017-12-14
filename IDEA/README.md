@@ -7,3 +7,7 @@
 export XMODIFIERS=@im=fcitx
 export QT_IM_MODULE=fcitx
 
+## java 英文
+-vm OPTIONS
+
+-Duser.language=en -Duser.country=US
