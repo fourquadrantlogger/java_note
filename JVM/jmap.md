@@ -50,3 +50,10 @@ PS Old Generation
 
 24201 interned Strings occupying 2887824 bytes.
 ```
+
+## jmap导出jvm内存信息
+
+sudo ./jmap -dump:format=b,file=mapfile  -F 12223
+
+jhat查看内存
+sudo ./jhat mapfile

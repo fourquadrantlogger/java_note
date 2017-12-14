@@ -13,5 +13,13 @@ public class VectorTest {
         integers2.add(1);
 
         System.out.println();
+        while (true) {
+            try {
+                Thread.sleep(1000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 }
