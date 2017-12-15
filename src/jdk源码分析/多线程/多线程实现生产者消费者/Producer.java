@@ -29,10 +29,13 @@ public class Producer implements Runnable {
 
                     System.out.println(name + "生产中");
 
-                    sleeping();
-                    System.out.println(name + "生产完成");
                     con.notify();
+
+
                     con.currentNum++;
+                    System.out.println(name + "生产完成  当前总数:\t" + con.currentNum);
+
+
                 } else {
                     System.out.println("物品数已满");
                     try {
@@ -44,6 +47,8 @@ public class Producer implements Runnable {
                 }
 
             }
+
+            sleeping();
         }
     }
 }

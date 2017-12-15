@@ -15,7 +15,7 @@ public class Customer implements Runnable {
 
     void sleeping() {
         try {
-            Thread.sleep(100);//调节生产者频率，过快容易猝死~~
+            Thread.sleep(150);//调节生产者频率，过快容易猝死~~
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -29,7 +29,7 @@ public class Customer implements Runnable {
 
                     System.out.println(name + "消费了");
                     con.currentNum--;
-                    sleeping();
+
 
                     con.notify();
 
@@ -44,6 +44,8 @@ public class Customer implements Runnable {
                 }
 
             }
+
+            sleeping();
         }
     }
 }
